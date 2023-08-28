@@ -38,7 +38,7 @@ export function StarWarsInfo() {
 	return (
 		<div className={style.widjet}>
 			<StarWarsInput value={starWarsInpuValue} onChange={starWarsOnInput} />
-			<List data={starWarsInfo}>{(id, text) => <StarWarsItem key={id} text={text} />}</List>
+			<List data={starWarsInfo}>{({ id, text }) => <StarWarsItem key={id} text={text} />}</List>
 		</div>
 	)
 }
